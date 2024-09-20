@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hone Pagess</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <main class="flex justify-center">
+    <div class="mockup-phone">
+      <div class="camera"></div>
+      <div class="display">
+        <div class="artboard artboard-demo phone-2">
+
+          <!-- abivalabe valance  -->
+          <div>
+            <div class="stats shadow">
+              <div class="stat">
+
+                <div id="avalavale_balance" class="stat-value">9400</div>
+                <div class="stat-desc">Avalavale Balance</div>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <!-- user action button  -->
+          <div>
+            <button id="add_mone_btn" class="btn btn-lg">Add Mone</button>
+            <button id="cash_out_btn_show" class="btn btn-lg">Cash Out</button>
+
+          </div>
+          <div class="divider"></div>
+          <!-- add mone form  start-->
+          <div id="add_mune_form" class="  card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Anount</span>
+                </label>
+                <input id="input_add_mone" type="text" placeholder="Amount" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin</span>
+                </label>
+                <input id="input_pin_number" type="password" placeholder="Pin Number" class="input input-bordered"
+                  autocomplete="off" required />
+              </div>
+              <div class="form-control mt-6">
+                <button class="btn btn-primary" id="btn_add_mone">Add Mone</button>
+              </div>
+            </form>
+          </div>
+          <!-- add mone form  end-->
+          <!-- cash out start  -->
+          <div id="cash_out_form" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Anount</span>
+                </label>
+                <input id="input_cash_out" type="text" placeholder="Amount" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin</span>
+                </label>
+                <input id="input_cash_out_pin_number" type="password" placeholder="Pin Number"
+                  class="input input-bordered" autocomplete="off" required />
+              </div>
+              <div class="form-control mt-6">
+                <button class="btn btn-primary" id="btn_cash_out">Cash Out</button>
+              </div>
+            </form>
+          </div>
+          <!-- cash out end  -->
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="home.js"></script>
+  <script src="cashOut.js"></script>
+  <script src="features.js"></script>
+</body>
+
+</html>
